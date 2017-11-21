@@ -10,8 +10,19 @@ namespace Metaphone
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			var m = new MetaphoneAlgorithm();
+
+			string input = Console.ReadLine();
+			Console.WriteLine(m.TranslateToPhonetic(input));
 			Console.ReadKey();
+		}	
+	}
+
+	public class MetaphoneAlgorithm
+	{
+		public string TranslateToPhonetic(string input)
+		{
+			return input;
 		}
 	}
 }
